@@ -1,0 +1,417 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ungu: #3498DB;
+    --ungu-tua: #21618C;
+    --ungu-muda: #D6EAF8;
+    --teks: #2C3E50;
+    --abu: #718096;
+    --garis: #D6E4F0;
+}
+body {
+    background: #F5FBFA;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    min-height: 60px;
+    background: #fff;
+    border: 1px solid var(--garis);
+    border-radius: 13px;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 3px 14px rgba(32, 178, 170, .08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ungu-tua);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    font-size: 30px;
+    color: var(--ungu);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #456765;
+    font-size: 13px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: var(--ungu);
+    font-weight: bold;
+}
+
+.search-top {
+    width: 205px;
+    border: 1px solid var(--garis);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    color: var(--abu);
+}
+
+.search-top input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--ungu-muda);
+    color: var(--ungu);
+    text-decoration: none;
+}
+
+/* BANNER */
+.hero {
+    margin-top: 13px;
+    min-height: 285px;
+    padding: 30px 5%;
+    border-radius: 14px;
+    background: linear-gradient(110deg, #96C4DE);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 510px;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: var(--ungu-tua);
+    font-size: clamp(27px, 3vw, 36px);
+    line-height: 1.2;
+    margin-bottom: 13px;
+}
+
+.hero p {
+    color: #456765;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 390px;
+}
+
+.hero-illustration {
+    width: 43%;
+    max-width: 450px;
+    min-width: 260px;
+}
+
+.hero-illustration svg {
+    display: block;
+    width: 100%;
+}
+
+.search-main {
+    display: flex;
+    align-items: center;
+    max-width: 520px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(32, 178, 170, .10);
+}
+
+.search-main > span {
+    padding: 10px;
+    color: var(--abu);
+    font-size: 20px;
+}
+
+.search-main input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    padding: 10px 5px;
+    font-size: 13px;
+}
+
+.search-main button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 24px;
+    background: var(--ungu);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-main button:hover,
+.btn-detail:hover {
+    background: #96C4DE;
+}
+
+/* KARTU KOS */
+.kos-section {
+    margin-top: 13px;
+    padding: 22px 24px 25px;
+    background: white;
+    border: 1px solid var(--garis);
+    border-radius: 14px;
+    box-shadow: 0 3px 15px rgba(32, 178, 170, .06);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    color: var(--ungu-tua);
+    font-size: 21px;
+}
+
+.section-heading a {
+    color: var(--ungu);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.kos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.kos-card {
+    border: 1px solid var(--garis);
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(32, 100, 95, .07);
+    background: white;
+}
+
+.kos-photo {
+    height: 155px;
+    position: relative;
+    background: var(--ungu-muda);
+}
+
+.kos-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #35A98B;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.kos-info {
+    padding: 12px;
+}
+
+.kos-info h3 {
+    color: var(--ungu-tua);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.harga {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.harga span {
+    color: var(--abu);
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.fasilitas {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--abu);
+    font-size: 11px;
+    margin: 8px 0;
+}
+
+.fasilitas span {
+    width: 15px;
+    color: var(--ungu);
+    text-align: center;
+}
+
+.btn-detail {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 8px;
+    border-radius: 7px;
+    background: var(--ungu);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 22px 0 8px;
+    color: var(--abu);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        padding: 8px;
+    }
+
+    .navbar {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .menu {
+        gap: 14px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .menu a {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .search-top {
+        order: 2;
+        flex: 1;
+        width: auto;
+    }
+
+    .profile-icon {
+        order: 2;
+    }
+
+    .hero {
+        min-height: 300px;
+        padding: 25px 20px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .hero-illustration {
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+        width: 65%;
+        opacity: .23;
+    }
+
+    .search-main button {
+        padding: 10px 14px;
+    }
+
+    .kos-section {
+        padding: 17px 12px;
+    }
+
+    .kos-grid {
+        gap: 10px;
+    }
+
+    .kos-photo {
+        height: 115px;
+    }
+
+    .kos-info {
+        padding: 9px;
+    }
+
+    .kos-info h3 {
+        font-size: 13px;
+    }
+
+    .harga {
+        font-size: 12px;
+    }
+
+    .fasilitas {
+        font-size: 10px;
+    }
+}
